@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>NexGuard | Safety Academy</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              colors: {
+                "primary": "#5048e5",
+                "background-light": "#f1f5f9", // Adjusted to a very light, desaturated grey (slate-100)
+                "background-dark": "#0f172a",
+              },
+              fontFamily: {
+                "display": ["Plus Jakarta Sans"]
+              },
+              borderRadius: {
+                "DEFAULT": "12px", 
+                "lg": "16px", 
+                "xl": "24px", 
+                "xxl": "32px"
+              },
+            },
+          },
+        }
+    </script>
+<style type="text/tailwindcss">
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .card-bordered {
+            border-width: 4px;
+            border-color: #5048e5;
+        }
+    </style>
+</head>
+<body class="bg-slate-100 dark:bg-slate-950 text-slate-900 dark:text-slate-100 min-h-screen">
+<div class="layout-container flex h-full grow flex-col">
+<header class="flex items-center justify-between whitespace-nowrap border-b border-slate-200 dark:border-slate-800 bg-white dark:bg-background-dark px-10 py-3 sticky top-0 z-50">
+<div class="flex items-center gap-8">
+<div class="flex items-center gap-4 text-primary">
+<div class="size-8 flex items-center justify-center bg-primary/10 rounded-full">
+<span class="material-symbols-outlined text-primary">shield</span>
+</div>
+<h2 class="text-slate-900 dark:text-white text-lg font-bold leading-tight tracking-[-0.015em]">NexGuard</h2>
+</div>
+<nav class="hidden md:flex items-center gap-9">
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Dashboard</a>
+<a class="text-primary text-sm font-bold border-b-2 border-primary py-1" href="#">Academy</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Reports</a>
+<a class="text-slate-600 dark:text-slate-400 text-sm font-medium hover:text-primary transition-colors" href="#">Settings</a>
+</nav>
+</div>
+<div class="flex flex-1 justify-end gap-6 items-center">
+<label class="hidden lg:flex flex-col min-w-40 !h-10 max-w-64">
+<div class="flex w-full flex-1 items-stretch rounded-full h-full bg-slate-100 dark:bg-slate-800">
+<div class="text-slate-500 flex items-center justify-center pl-4">
+<span class="material-symbols-outlined text-xl">search</span>
+</div>
+<input class="form-input flex w-full min-w-0 flex-1 border-none bg-transparent focus:ring-0 h-full placeholder:text-slate-500 px-4 text-sm font-normal" placeholder="Search modules..." value=""/>
+</div>
+</label>
+<div class="flex gap-2">
+<button class="flex items-center justify-center rounded-full size-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-primary/10 hover:text-primary transition-all">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+<button class="flex items-center justify-center rounded-full size-10 bg-slate-100 dark:bg-slate-800 text-slate-700 dark:text-slate-200 hover:bg-primary/10 hover:text-primary transition-all">
+<span class="material-symbols-outlined">account_circle</span>
+</button>
+</div>
+<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full size-10 border-2 border-primary/20" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDvUoQ0RxubzMlssZcQQ5xBn4x_YjRGbmq9RjkCtuETSGEOvcS85qmJmXg4LLMR0F5yz96A_nWpCeZDojlVCE7LLS9uf7OvuyXDI9LCjh_mISYDmofYs5KW7TSwRgiDBtpQiNXZfdNB5jI8JARIc26Dvgxs2uXeQRQb00Lm365wjvadpKw9p_35SuYg9kfHM-XfCh811aQ5INp1qFg1keotclBGi47hMgI9eN9ex91ExHuPWk13cW4xmZ7qR7HevrnBIVSkyPfUZlMv");'></div>
+</div>
+</header>
+<main class="max-w-[1200px] mx-auto w-full px-6 py-16">
+<div class="text-center mb-16 space-y-4">
+<h1 class="text-slate-900 dark:text-white text-4xl md:text-5xl font-extrabold tracking-tight">
+                📚 What Do You Want to Learn?
+            </h1>
+<p class="text-slate-600 dark:text-slate-400 text-xl font-medium">
+                Choose a phishing technique to explore in detail
+            </p>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+<div class="bg-white dark:bg-slate-900 rounded-xxl card-bordered p-10 flex flex-col hover:shadow-2xl transition-all duration-300 shadow-lg">
+<div class="mb-8">
+<div class="size-20 rounded-2xl bg-blue-50 dark:bg-blue-900/20 flex items-center justify-center text-5xl mb-8">
+                        📧
+                    </div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Email Phishing</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed grow">
+                        Identify fake sender addresses, phishing links in emails, and common email scam tactics used by attackers
+                    </p>
+</div>
+<button class="w-full py-5 px-8 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-md">
+                    Start Learning
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xxl card-bordered p-10 flex flex-col hover:shadow-2xl transition-all duration-300 shadow-lg">
+<div class="mb-8">
+<div class="size-20 rounded-2xl bg-purple-50 dark:bg-purple-900/20 flex items-center justify-center text-5xl mb-8">
+                        💬
+                    </div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">SMS &amp; Text Scams</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed grow">
+                        Scammers use SMS to steal OTPs and personal data. Learn to verify messages before clicking any links
+                    </p>
+</div>
+<button class="w-full py-5 px-8 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-md">
+                    Start Learning
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xxl card-bordered p-10 flex flex-col hover:shadow-2xl transition-all duration-300 shadow-lg">
+<div class="mb-8">
+<div class="size-20 rounded-2xl bg-emerald-50 dark:bg-emerald-900/20 flex items-center justify-center text-5xl mb-8">
+                        🌐
+                    </div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Fake Websites &amp; URLs</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed grow">
+                        Recognize fake login pages, URL manipulation tricks, and domain spoofing techniques used in phishing
+                    </p>
+</div>
+<button class="w-full py-5 px-8 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-md">
+                    Start Learning
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xxl card-bordered p-10 flex flex-col hover:shadow-2xl transition-all duration-300 shadow-lg">
+<div class="mb-8">
+<div class="size-20 rounded-2xl bg-amber-50 dark:bg-amber-900/20 flex items-center justify-center text-5xl mb-8">
+                        🧠
+                    </div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Social Engineering</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed grow">
+                        Understand psychological manipulation tactics attackers use to trick you into revealing sensitive information
+                    </p>
+</div>
+<button class="w-full py-5 px-8 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-md">
+                    Start Learning
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xxl card-bordered p-10 flex flex-col hover:shadow-2xl transition-all duration-300 shadow-lg">
+<div class="mb-8">
+<div class="size-20 rounded-2xl bg-rose-50 dark:bg-rose-900/20 flex items-center justify-center text-5xl mb-8">
+                        📞
+                    </div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Voice Phishing (Vishing)</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed grow">
+                        Identify phone scams, fake customer support calls, and voice-based fraud attempts targeting your accounts
+                    </p>
+</div>
+<button class="w-full py-5 px-8 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-md">
+                    Start Learning
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xxl card-bordered p-10 flex flex-col hover:shadow-2xl transition-all duration-300 shadow-lg">
+<div class="mb-8">
+<div class="size-20 rounded-2xl bg-orange-50 dark:bg-orange-900/20 flex items-center justify-center text-5xl mb-8">
+                        📱
+                    </div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">QR Code Phishing</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed grow">
+                        QR codes can hide dangerous links. Learn to verify before scanning and avoid payment scams
+                    </p>
+</div>
+<button class="w-full py-5 px-8 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-md">
+                    Start Learning
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="bg-white dark:bg-slate-900 rounded-xxl card-bordered p-10 flex flex-col hover:shadow-2xl transition-all duration-300 shadow-lg">
+<div class="mb-8">
+<div class="size-20 rounded-2xl bg-indigo-50 dark:bg-indigo-900/20 flex items-center justify-center text-5xl mb-8">
+                        🔗
+                    </div>
+<h3 class="text-2xl font-bold text-slate-900 dark:text-white mb-4">Social Media Scams</h3>
+<p class="text-slate-600 dark:text-slate-400 text-lg leading-relaxed grow">
+                        Spot fake profiles, phishing on Instagram, Facebook, LinkedIn, and Twitter used to steal your data
+                    </p>
+</div>
+<button class="w-full py-5 px-8 bg-primary text-white font-bold rounded-xl flex items-center justify-center gap-3 hover:bg-primary/90 transition-all shadow-md">
+                    Start Learning
+                    <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+</div>
+<div class="mt-24 pt-8 border-t border-slate-200 dark:border-slate-800 flex justify-center">
+<p class="text-slate-400 text-sm font-medium">NexGuard Academy © 2024 • Professional Safety Training</p>
+</div>
+</main>
+</div>
+
+</body></html>
